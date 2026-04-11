@@ -1,6 +1,6 @@
 ### Baseline image for development/test/build ###
 # We require a lot of extras for building (Python, GCC) because of Node-Zopfli.
-FROM node:22.16.0 as dev
+FROM dhi.io/node:22-debian13-dev as dev
 LABEL maintainer="enviroDGI@gmail.com"
 
 RUN mkdir -p /app
